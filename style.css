@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+h2 {
+    margin-top: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#total-income,
+#total-expenses,
+#total-savings,
+#total-budget,
+#remaining-budget {
+    font-weight: bold;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.add-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.summary-section p {
+    margin-bottom: 20px;
+}
+
+.income-section {
+    animation: slideInFromLeft 0.5s ease forwards;
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+.expenses-section {
+    animation: slideInFromBottom 0.5s ease forwards;
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.savings-section {
+    animation: slideInFromRight 0.5s ease forwards;
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+@keyframes slideInFromLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+button {
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+body {
+    background-image: url('budget.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-image: url('tech.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p {
+    color: white;
+}
